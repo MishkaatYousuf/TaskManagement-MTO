@@ -1,0 +1,145 @@
+.tasks-container {
+  min-height: 100vh;
+  background-color: rgb(236, 244, 247);
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.tasks-wrapper {
+  color: #05415e;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tasks-header h2 {
+  margin-bottom: 16px;
+}
+
+.task-form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.task-form button {
+  background-color: #05415e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+  border-left: 6px solid #d1d5db;
+}
+
+.task-card.in-progress {
+  border-left-color: #f59e0b;
+}
+
+.task-card.completed {
+  border-left-color: #10b981;
+}
+
+.task-meta {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.task-actions button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #05415e;
+  color: white;
+}
+
+.task-actions .delete {
+  background-color: #dc2626;
+}
+.task-form input,
+.task-form textarea,
+.task-form select {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.task-form input::placeholder,
+.task-form textarea::placeholder {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #9ca3af;
+}
+.task-card h4,
+.task-card p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}.task-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.task-filters input,
+.task-filters select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #05415e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
