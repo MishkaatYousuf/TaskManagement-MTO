@@ -82,9 +82,9 @@ POST	/api/auth/login	-> Login user and return JWT;
   
   Task Routes (Protected):
 Method	Endpoint	Description
-GET	/api/tasks	-> Get logged-in user’s tasks
-POST	/api/tasks	-> Create a new task
-PUT	/api/tasks/:id	-> Update an existing task
+GET	/api/tasks	-> Get logged-in user’s tasks;
+POST	/api/tasks	-> Create a new task;
+PUT	/api/tasks/:id	-> Update an existing task;
 DELETE	/api/tasks/:id	-> Delete a task
 
 All task routes require a valid JWT token in the Authorization header.
@@ -121,6 +121,4 @@ Client-side pagination and filtering are used for simplicity
 
 Environment variables are used for sensitive data
 
-🏁 Conclusion
-
-This project demonstrates full-stack development, authentication, RESTful APIs, and clean UI practices.
+Conclusion: This project demonstrates full-stack development, authentication, RESTful APIs, and clean UI practices.
