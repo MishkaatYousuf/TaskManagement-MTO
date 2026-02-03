@@ -76,16 +76,16 @@ JWT is stored in localStorage
 Protected routes use JWT for authorization
 
  API Routes:
-  Authentication Routes
+ Authentication Routes
+POST	/api/auth/register ->	Register a new user; 
+POST	/api/auth/login	-> Login user and return JWT; 
+  
+  Task Routes (Protected):
 Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login user and return JWT
-  Task Routes (Protected)
-Method	Endpoint	Description
-GET	/api/tasks	Get logged-in user’s tasks
-POST	/api/tasks	Create a new task
-PUT	/api/tasks/:id	Update an existing task
-DELETE	/api/tasks/:id	Delete a task
+GET	/api/tasks	-> Get logged-in user’s tasks
+POST	/api/tasks	-> Create a new task
+PUT	/api/tasks/:id	-> Update an existing task
+DELETE	/api/tasks/:id	-> Delete a task
 
 All task routes require a valid JWT token in the Authorization header.
 
